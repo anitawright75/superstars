@@ -2,6 +2,7 @@ require 'sinatra/base'
 
 #ontrollers
 require './controllers/application_controller'
+require './controllers/superstar_controller'
 #models 
 
 require './models/superstar'
