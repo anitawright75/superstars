@@ -50,6 +50,8 @@ class SuperstarController < ApplicationController
     @model.destroy
     { :message => "Item of id " + @id + " was removed."}.to_json
   end
+end
+
 
 
   # get '/fab' do
