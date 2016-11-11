@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20161108215434) do
     t.string "moral"
   end
 
-  create_table "happy_places", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "happyplaces", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "lat"
     t.string "lon"

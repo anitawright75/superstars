@@ -1,15 +1,15 @@
-class ApplicationController < Sinatra::Base
+# class ApplicationController < Sinatra::Base
 
 
-require 'bundler'
-Bundler.require
+# require 'bundler'
+# Bundler.require
 
 
-set :views, File.dirname(__FILE__) + '/views'
-set :public_folder, File.dirname(__FILE__) + 'public'
+# set :views, File.dirname(__FILE__) + '/views'
+# set :public_folder, File.dirname(__FILE__) + 'public'
 
-#enabling sessions 
-#connect to our database
-enable :sessions, :logging
+# #enabling sessions 
+# #connect to our database
+# enable :sessions, :logging
 
-end 
+# end 

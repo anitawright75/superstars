@@ -4,7 +4,7 @@ require 'sinatra/base'
 require './controllers/application_controller'
 require './controllers/superstar_controller'
 require './controllers/fairytale_controller'
-require './controllers/happy_places_controller'
+require './controllers/happyplaces_controller'
 # require models here 
 
 require './models/superstar'
@@ -14,7 +14,7 @@ require './models/happyplaces'
 map('/'){ run ApplicationController }
 map('/api/superstars') {run SuperstarController}
 map('/api/fairytales') {run FairytaleController}
-map('/api/happy_places') {run Happy_PlacesController}
+map('/api/happyplaces') {run HappyPlacesController}
 
 
 
@@ -28,6 +28,7 @@ before '/*' do
 	puts request.host
 	puts params
 	puts request.path
+	puts request.body
 end
 
 after '/*' do

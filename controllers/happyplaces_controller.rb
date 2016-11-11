@@ -1,4 +1,4 @@
-class Happy_PlacesController < ApplicationController
+class Happyplaces < ApplicationController
 
   get '/' do
     # get all

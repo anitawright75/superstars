@@ -1,6 +1,6 @@
 class SuperstarController < ApplicationController
 
-  get '/' do
+  get '/*' do
     # get all
     Superstar.all.to_json
   end
@@ -35,6 +35,7 @@ class SuperstarController < ApplicationController
     @name = params[:name]
     @talent = params[:talent]
     @outfit = params[:outfit]
+    
     @model = Superstar.find(@id)
     @model.name = @name
     @model.talent = @talent
